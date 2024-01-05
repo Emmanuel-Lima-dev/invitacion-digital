@@ -10,6 +10,7 @@ body{
     justify-content: center;
     width: 100%;
     font-family: 'Macondo', cursive;
+    
 }
 
 header{
@@ -29,7 +30,12 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 15%;
+    padding-bottom: 25%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .banderines{
@@ -37,8 +43,10 @@ main{
 }
 
 .img-plimplim{
-    margin-top: -100px;
-    filter: drop-shadow(5px 5px 5px rgba(15, 15, 15, 0.356))
+    margin-top: -110px;
+    margin-bottom: 20px;
+    filter: drop-shadow(5px 5px 5px rgba(15, 15, 15, 0.356));
+    animation: efecto-flotante 4s ease-in-out infinite;
 }
 
 .cont-bandera-chloe{
@@ -74,10 +82,11 @@ main{
     color: #fff;
     border-radius: 50px;
     padding:7px 10px;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 .cont-fecha-detalles{
@@ -88,7 +97,7 @@ main{
 }
 
 .cont-lugar-detalles{
-    height: 40%;
+    height: auto;
     border-bottom: dotted #fff 1px;
     padding-left: 13px;
     display: flex;
@@ -104,8 +113,8 @@ main{
 }
 
 .text-te-esperamos{
-    color: #E825D4;
-    filter: drop-shadow(2px 2px 2px #5263FF);
+    color: #5263FF;
+    filter: drop-shadow(2px 2px 2px #E825D4);
     font-weight: bold;
     font-size: 25px;
 }
@@ -124,4 +133,17 @@ button{
     background-image: linear-gradient(#E825D4, #5263FF);
     color: #fff;
     line-height: 17px;
+    font-size: 1.1rem;
+}
+
+@keyframes efecto-flotante{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px );
+    }
 }
